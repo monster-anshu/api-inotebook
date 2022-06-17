@@ -20,7 +20,7 @@ app.get("/api", (req, res) => {
   res.send("Hello Himanshu");
 });
 app.get("/", (req, res) => {
-  res.send("Api working updated 71");
+  res.send("Api working updated 80");
 });
 // app.use(express.static(path.join(__dirname, "../build")));
 // app.get("/*", function (req, res) {
