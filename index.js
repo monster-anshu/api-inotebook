@@ -10,7 +10,7 @@ connectToMongo();
 //Avilable Routes
 app.use(
   cors({
-    origin: "https://app-inotebook.vercel.app",
+    origin: "*",
   })
 );
 app.use(express.json());
@@ -20,7 +20,7 @@ app.get("/api", (req, res) => {
   res.send("Hello Himanshu");
 });
 app.get("/", (req, res) => {
-  res.send("Api working updated 69");
+  res.send("Api working updated 70");
 });
 // app.use(express.static(path.join(__dirname, "../build")));
 // app.get("/*", function (req, res) {
