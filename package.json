@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "deploy": "git add . && git commit -m 'Deploy' "
+    "deploy": "git add . && git commit -m 'Deploy' && yarn github && yarn glitch ",
+    "github": "git push origin master",
+    "glitch": "git push deploy master"
   },
   "author": "",
   "license": "ISC",
