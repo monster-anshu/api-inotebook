@@ -4,7 +4,13 @@ const path = require("path");
 const app = express();
 const port = process.env.PORT || 5000;
 const cors = require("cors");
+const { init } = require("glitch-deploy-helper");
 
+async function main() {
+  await init();
+}
+
+main();
 // Connection to DB
 connectToMongo();
 //Avilable Routes
